@@ -106,4 +106,6 @@ testpaths = ["tests"]
 # Removed --cov flags so a plain `pytest` run doesn't require pytest-cov installed
 # -p no:warnings keeps output clean during local dev
 # Added -x so the test run stops on the first failure — faster feedback locally
-addopts = "-v -p no:warnings -x"
+# Removed -x for personal use: I prefer seeing all failures at once rather than
+# stopping on the first one, makes it easier to spot patterns across test failures.
+addopts = "-v -p no:warnings"
