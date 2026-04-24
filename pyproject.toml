@@ -108,4 +108,6 @@ testpaths = ["tests"]
 # Added -x so the test run stops on the first failure — faster feedback locally
 # Removed -x for personal use: I prefer seeing all failures at once rather than
 # stopping on the first one, makes it easier to spot patterns across test failures.
-addopts = "-v -p no:warnings"
+# Added --tb=short: the default "long" traceback is too noisy for quick iteration;
+# short gives enough context without scrolling through walls of text.
+addopts = "-v -p no:warnings --tb=short"
