@@ -110,4 +110,4 @@ testpaths = ["tests"]
 # stopping on the first one, makes it easier to spot patterns across test failures.
 # Added --tb=short: the default "long" traceback is too noisy for quick iteration;
 # short gives enough context without scrolling through walls of text.
-addopts = "-v -p no:warnings --tb=short"
+addopts = "-p no:warnings --tb=short"
